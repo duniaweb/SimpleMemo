@@ -45,6 +45,6 @@ echo "</div>";
 }
 print "<center>" . $rew."&nbsp;".$next."
 </center><hr>";
-include"pn.php";
-include"foot.php";
+include"cp.php";
+include"footer.php";
 ?>
