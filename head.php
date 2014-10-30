@@ -10,7 +10,7 @@ include"./lib/func.php";?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title><?if(!$title){$title ="Layangan";}?><?=$title;?></title>
+<title><?if(!$title){$title ="Simple Memo";}?><?=$title;?></title>
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="/css/yeti.bootstrap.css">   
 <meta charset="utf-8">    
