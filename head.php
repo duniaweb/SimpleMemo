@@ -4,7 +4,7 @@ if(!isset($HTTP_SERVER_VARS))
 $HTTP_SERVER_VARS=$_SERVER;
 extract($HTTP_REQUEST_VARS);
 extract($HTTP_SERVER_VARS);
-include"set.php";
+include"config.php";
 include"./lib/pasar.php";
 include"./lib/func.php";?>
 <!DOCTYPE html>
