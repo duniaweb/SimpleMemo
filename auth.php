@@ -1,0 +1,16 @@
+<?
+session_start();
+include"config.php";
+$log=$_REQUEST[log];
+$pw=$_REQUEST[pw];
+if($log)
+{if($pw==$pwd)
+{session_register('log');
+header("location:./");}
+else{header("location:./?a=login&er=1");
+}
+}
+if($_REQUEST[a]=="ot")
+{session_destroy();
+header("location:./");}
+?>
