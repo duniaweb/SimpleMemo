@@ -24,7 +24,7 @@ Move all file to your hosting<br />
 First rename <code>config-sample.php</code> to <code>config.php</code><br />
 Edit <code>config.php</code><br />
 Create & set perm 777 dir <code>content</code><br />
-Set perm 666 to </code>lib/ip.txt</code> and <code>x/spam.txt</code>
+Set perm 666 to <code>lib/ip.txt</code> and <code>x/spam.txt</code>
 
 
 
