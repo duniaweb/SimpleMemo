@@ -5,7 +5,7 @@ $id=$_REQUEST[id];
 $nid=$_REQUEST[nid];
 switch($del)
 {case entry :
-$datablog="./arsip/art.txt";
+$datablog="./content/art.txt";
 $record = file($datablog);
 $jmlrec = count($record);
 for ($i=0; $i<$jmlrec; $i++) {
@@ -17,11 +17,11 @@ for ($j=0; $j<$jmlrec; $j++)
 {if($record[$j] <> "") 
 fputs($update_data,$record[$j]);}
 fclose($update_data);
-unlink("./arsip/kom_$id.txt");
+unlink("./content/kom_$id.txt");
 header("location:./");
 break;
 case koment :
-$datakom="./arsip/kom_$nid.txt";
+$datakom="./content/kom_$nid.txt";
 $record = file($datakom);
 $jmlrec = count($record);
 for ($i=0; $i<$jmlrec; $i++) {
@@ -36,11 +36,11 @@ fclose($update_data);
 header("location:./art.php?id=$nid");
 break;
 case allkom :
-$dell=fopen("./arsip/kom_$id.txt","w+");
+$dell=fopen("./content/kom_$id.txt","w+");
 header("location:./art.php?id=$id");
 break;
 case allnews :
-$dell=fopen("./arsip/entry.txt","w+");
+$dell=fopen("./content/entry.txt","w+");
 header("location:./");
 break;
 }
