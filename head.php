@@ -20,4 +20,5 @@ include"./lib/func.php";?>
 <meta name="author" content=" <?=$email;?>">
 </head><body>
 <div class="head">
+<div class="container theme-showcase" role="main">
 <div class="jumbotron">  <h1><i class="fa fa-pencil-square-o"></i> <a href="./"> <?=$title;?></a></h1>  <p>   <?=$slog;?></p></div>
