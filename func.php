@@ -11,7 +11,7 @@ $text=ereg_replace('www.[-0-9a-zA-Z/&%$#._=?]+',
 '<a href="http://\\0">\\0</a>',$text);
 return $text;}
 function spam($string) {
-$data = "x/spam.txt";
+$data = "lib/spam.txt";
 $spam = false;
 if (file_exists($data)) {
 $spamword = file($data);
@@ -27,7 +27,7 @@ break;
 return $spam;
 }
 function ban($banip) {
-$data = "x/ip.txt";
+$data = "lib/ip.txt";
 $ban = false;
 if (file_exists($data)) {
 $ipban = file($data);
