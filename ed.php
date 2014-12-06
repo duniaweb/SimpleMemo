@@ -5,7 +5,7 @@ $id =  $_REQUEST['id'];
 $judul = $_POST['judul'];
 $news = $_POST['news'];
 $rep = $_POST['rep'];
-$datablog=("./arsip/art.txt");
+$datablog=("./content/art.txt");
 if(session_is_registered('log')){
 if($rep) 
 {if(isset($id)) 
