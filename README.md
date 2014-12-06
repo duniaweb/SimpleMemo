@@ -24,7 +24,10 @@ Move all file to your hosting<br />
 First rename <code>config-sample.php</code> to <code>config.php</code><br />
 Edit <code>config.php</code><br />
 Create & set perm 777 dir <code>content</code><br />
-Set perm 666 to <code>lib/ip.txt</code> and <code>x/spam.txt</code>
+Create file call <code>art.txt</code> on <code>/content/</code>
+Create new dir <code>lib</code> on root
+Move file "func.php", "mods.php" to <code>lib</code> directory
+Create and set perm 666 to <code>lib/ip.txt</code> and <code>x/spam.txt</code>
 
 
 
