@@ -19,7 +19,7 @@ echo "
 <span class=\"label label-default\"> Written by $data[3] on $data[1] at $data[2]</span> ";
 if(session_is_registered('log')){
 echo " <a class=\"label label-primary\" href=\"./edit.php?id=$data[0]\">Edit</a>
-<a class=\"label label-danger\" href=\"./dels.php?del=entry&amp;id=$data[0]\">Hapus</a>";}
+<a class=\"label label-danger\" href=\"./dels.php?del=entry&amp;id=$data[0]\">Remove</a>";}
 echo "<br></br>";
 }}}
 echo"<div id=\"form\">";
