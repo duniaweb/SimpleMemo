@@ -8,7 +8,8 @@ Simple Memo
 
 Features
 ===========
-<pre>Save all post to 1 file .txt
+<pre>Bootstrap Style
+Save all post to 1 file .txt
 Support Banned IP
 Support Filter Spam
 Easy installation
