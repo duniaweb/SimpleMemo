@@ -19,15 +19,15 @@ $first = count($xfile) - ($post * ($hal - 1));
 $second = count($xfile) - ($post * $hal) + 1;
 if ($second < 1) {$second = 1;}
 $hals = (count($xfile) / $post);
-if ($hal>1) $rew = "<a class=\"btn btn-primary btn-xs\" href=\"./?hal=".($hal-1)."\">« Sebelumnya</a>";
-if ($hal<$hals) $next = "<a class=\"btn btn-primary btn-xs\" href=\"./?hal=".($hal+1)."\">Selanjutnya »</a>";
+if ($hal>1) $rew = "<a class=\"btn btn-primary btn-xs\" href=\"./?hal=".($hal-1)."\">« Previos</a>";
+if ($hal<$hals) $next = "<a class=\"btn btn-primary btn-xs\" href=\"./?hal=".($hal+1)."\">Next »</a>";
 for ($i = $first-1; $i >= $second-1; $i--) {
 $ii = $i;
 $ii++;
 $data = explode("|",$xfile[$i]);
 $fkom=file("./content/kom_$data[0].txt");
 print "<div class=\"isi\">
-<span class=\"label label-default\"><i class=\"fa fa-calendar-o\"></i> $data[1] <i class=\"fa fa-clock-o\"></i> $data[2]</span> <span class=\"label label-primary\"><i class=\"fa fa-comments-o\"></i> ".count($fkom)." komentar.</span>
+<span class=\"label label-default\"><i class=\"fa fa-calendar-o\"></i> $data[1] <i class=\"fa fa-clock-o\"></i> $data[2]</span> <span class=\"label label-primary\"><i class=\"fa fa-comments-o\"></i> ".count($fkom)." comments.</span>
 <div class=\"list-group\">
   <a href=\"./art.php?id=$data[0]\" class=\"list-group-item\">
      <h4 class=\"list-group-item-heading\"><i class=\"fa fa-paperclip\"></i> ".ucfirst($data[4])."</h4>
@@ -36,7 +36,7 @@ print "<div class=\"isi\">
 ";
 if(session_is_registered('log')){
 echo "<a class=\"label label-primary\" href=\"./edit.php?id=$data[0]\">Edit</a>
-<a class=\"label label-danger\" href=\"./dels.php?del=entry&amp;id=$data[0]\">Hapus</a>";}
+<a class=\"label label-danger\" href=\"./dels.php?del=entry&amp;id=$data[0]\">Remove</a>";}
 echo "</div>";
 }
 print "<center>" . $rew."&nbsp;".$next."
