@@ -19,7 +19,7 @@ echo "
 if(session_is_registered('log')){
 echo " <a class=\"label label-primary\" href=\"./edit.php?id=$data[0]\">Edit</a>
 <a class=\"label label-danger\" href=\"./dels.php?del=entry&amp;id=$data[0]\">Hapus</a>";}
-echo "</div><br></br>";
+echo "<br></br>";
 }}}
 echo"<div id=\"form\">";
 $komdata=file("./content/kom_$id.txt");
