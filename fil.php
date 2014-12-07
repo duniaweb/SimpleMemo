@@ -11,7 +11,7 @@ fclose($op);
 echo "
 <div class=\"alert alert-dismissable alert-success\">
   <button type=\"button\" class=\"close\" data-dismiss=\"alert\">×</button>
-  <strong>Oke!</strong> $ip telah ditambahkan. <a onclick=\"history.back()\" class=\"alert-link\">Kembali.</a>.
+  <strong>Oke!</strong> $ip was addedd to Deny Ips. <a onclick=\"history.back()\" class=\"alert-link\">back.</a>.
 </div>
 ";}
 else{}
@@ -24,7 +24,7 @@ fclose($op);
 echo "
 <div class=\"alert alert-dismissable alert-success\">
   <button type=\"button\" class=\"close\" data-dismiss=\"alert\">×</button>
-  <strong>Oke!</strong> $spam berhasil ditambahkan ke daftar Spam!. <a onclick=\"history.back()\" class=\"alert-link\">Kembali.</a>.
+  <strong>Oke!</strong> $spam was added to list Spam!. <a onclick=\"history.back()\" class=\"alert-link\">back.</a>.
 </div>
 ";}
 else{}
@@ -34,12 +34,12 @@ switch($fil){
 case ip : ?>
 <form action="<?=$PHP_SELF;?>?ad=ipx" method="post">
 <div class="form-group">
-  <label class="control-label">Masukkan IP</label>
+  <label class="control-label">Input IP</label>
   <div class="input-group">
     <span class="input-group-addon"><i class="fa fa-ban"></i></span>
     <input class="form-control" type="text" name="ip">
     <span class="input-group-btn">
-      <button class="btn btn-default" type="submit" Value="Tambahkan">Tambah</button>
+      <button class="btn btn-default" type="submit" Value="Tambahkan">Add</button>
     </span>
   </div>
 </form>
@@ -48,12 +48,12 @@ break;
 case spam : ?>
 <form action="<?=$PHP_SELF;?>?ad=spamx" method="post">
 <div class="form-group">
-  <label class="control-label">Tambah Spam</label>
+  <label class="control-label">Input Word</label>
   <div class="input-group">
     <span class="input-group-addon"><i class="fa fa-times"></i></span>
     <input class="form-control" type="text" name="spam">
     <span class="input-group-btn">
-      <button class="btn btn-default" type="submit" Value="Tambahkan">Tambahkan</button>
+      <button class="btn btn-default" type="submit" Value="Tambahkan">Add</button>
     </span>
   </div>
 </form>
@@ -74,7 +74,8 @@ if ($second < 1) {$second = 1;}
 $hals = ($total / $post);
 if ($hal>1) $rew = "<a href=\"$PHP_SELF?show=ip&amp;hal=".($hal-1)."\">".($hal-1)."</a>";
 if ($hal<$hals) $next = "<a href=\"$PHP_SELF?show=ip&amp;hal=".($hal+1)."\">".($hal+1)."</a>";
-echo "<div class=\"panel panel-danger\">  <div class=\"panel-heading\">    <h3 class=\"panel-title\">Daftar IP Banned</h3>  </div>
+echo "<div class=\"panel panel-danger\">  <div class=\"panel-heading\">    <
+h3 class=\"panel-title\">List of IP Deny</h3>  </div>
 ";
 for ($i = $first-1; $i >= $second-1; $i--) 
 {
@@ -82,7 +83,7 @@ $ii = $i;$ii++;
 echo $data[$i].' </br>';}
 echo "
 </div></div>
-<p><a class=\"btn btn-default\" href=\"$PHP_SELF?fil=ip\">Tambah</a></p></div>
+<p><a class=\"btn btn-default\" href=\"$PHP_SELF?fil=ip\">Add More</a></p></div>
 <th><p>$rew  $next</p>";
 break;
 case spam :
@@ -100,7 +101,7 @@ if ($hal<$hals) $next = "<a href=\"$PHP_SELF?show=spam&amp;hal=".($hal+1)."\">".
 echo "
 <div class=\"panel panel-warning\">
   <div class=\"panel-heading\">
-    <h3 class=\"panel-title\">Daftar Kata Spam</h3>
+    <h3 class=\"panel-title\">List of Spams</h3>
   </div>
   <div class=\"panel-body\">
 
@@ -113,7 +114,7 @@ echo $isi[0]."</br>";}
 echo "
   </div>
 </div>
-<p><a class=\"btn btn-default\" href=\"$PHP_SELF?fil=spam\">Tambah</a></p></div>
+<p><a class=\"btn btn-default\" href=\"$PHP_SELF?fil=spam\">Add More</a></p></div>
 <p>$rew  $next</p>";
 break;
 }
