@@ -33,7 +33,7 @@ Create and set perm 666 to <code>lib/ip.txt</code> and <code>lib/spam.txt</code>
 ===========
 This is sample link that use SimpleMemo<br />
 http://goez.my.id/memo<br />
-http://bijak.ga<br /><br />
+http://bijak.ga<br />
 http://baguz.ml<br />
 <br />
 Thanks ;)
