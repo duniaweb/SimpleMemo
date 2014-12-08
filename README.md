@@ -30,6 +30,14 @@ Create new dir <code>lib</code> on root<br />
 Move file "func.php" & "mods.php" to <code>lib</code> directory<br />
 Create and set perm 666 to <code>lib/ip.txt</code> and <code>lib/spam.txt</code>
 
+===========
+This is sample link that use SimpleMemo
+http://goez.my.id/memo
+http://bijak.ga
+http://baguz.ml
+
+Thanks ;)
+
 
 
 
