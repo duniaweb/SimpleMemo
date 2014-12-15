@@ -1,0 +1,7 @@
+#sample robots
+
+User-agent: *
+Disaalow: /?a=login
+Disallow: /lib/*.txt
+Disallow: /lib/*.php
+Disallow: /content/*.txt
