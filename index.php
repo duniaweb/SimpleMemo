@@ -5,7 +5,7 @@ if($a=='login'){
 <form action="aut.php" method="post">
 <div class="input-group">
     <span class="input-group-addon"><i class="fa fa-key"></i></span>
-    <input class="form-control" type="text" name ="pw" type="password" id="inputPassword" placeholder="Password">
+    <input class="form-control" name ="pw" type="password" id="inputPassword" placeholder="Password">
     <span class="input-group-btn">
       <button class="btn btn-default" type="submit" name="log" value="Login">Login</button>
     </span>
