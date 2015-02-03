@@ -5,7 +5,7 @@ if(session_is_registered('log')){
 switch($ad)
 {case ipx :
 if($ip!='')
-{$op=fopen("./lib/ip.txt","a");
+{$op=fopen("./lib/ip-blacklisted.db","a");
 fwrite($op,"$ip\r\n");
 fclose($op);
 echo "
@@ -18,7 +18,7 @@ else{}
 break;
 case spamx :
 if($spam!='')
-{$op=fopen("./lib/spam.txt","a");
+{$op=fopen("./lib/spamw.db","a");
 fwrite($op,"$spam\r\n");
 fclose($op);
 echo "
@@ -63,7 +63,7 @@ break;
 switch($show)
 {
 case ip :
-$data=file("./lib/ip.txt");
+$data=file("./lib/ip-blacklisted.db");
 $total=count($data);
 $post=15;
 if ($hal == "")
@@ -74,8 +74,7 @@ if ($second < 1) {$second = 1;}
 $hals = ($total / $post);
 if ($hal>1) $rew = "<a href=\"$PHP_SELF?show=ip&amp;hal=".($hal-1)."\">".($hal-1)."</a>";
 if ($hal<$hals) $next = "<a href=\"$PHP_SELF?show=ip&amp;hal=".($hal+1)."\">".($hal+1)."</a>";
-echo "<div class=\"panel panel-danger\">  <div class=\"panel-heading\">    <
-h3 class=\"panel-title\">List of IP Deny</h3>  </div>
+echo "<div class=\"panel panel-danger\">  <div class=\"panel-heading\">    <h3 class=\"panel-title\">List of IP Deny</h3>  </div>
 ";
 for ($i = $first-1; $i >= $second-1; $i--) 
 {
@@ -87,7 +86,7 @@ echo "
 <th><p>$rew  $next</p>";
 break;
 case spam :
-$data=file("./lib/spam.txt");
+$data=file("./lib/spamw.db");
 $total=count($data);
 $post=15;
 if ($hal == "")
