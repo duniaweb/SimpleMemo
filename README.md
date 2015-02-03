@@ -25,7 +25,7 @@ Move all file to your hosting<br />
 First rename <code>config-sample.php</code> to <code>config.php</code><br />
 Edit <code>config.php</code><br />
 Set perm 777 dir <code>content</code><br />
-Set perm 666 to <code>/lib/ip.txt</code> and <code>/lib/spam.txt</code>
+Set perm 666 to <code>/lib/ip-blacklisted.db</code> and <code>/lib/spamw.db</code>
 
 ===========
 This is sample link that use SimpleMemo<br />
