@@ -17,7 +17,7 @@ Easy Backup</pre>
 
 Requirement
 ===========
-PHP 5.2
+PHP 5.2 (older)
 
 Installation
 ===========
