@@ -30,8 +30,6 @@ Set perm 666 to <code>/lib/ip-blacklisted.db</code> and <code>/lib/spamw.db</cod
 ===========
 This is sample link that use SimpleMemo<br />
 http://goez.my.id/memo<br />
-http://bijak.ga<br />
-http://bagus.ml<br />
 <br />
 Thanks ;)
 
