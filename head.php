@@ -7,8 +7,8 @@ extract($HTTP_SERVER_VARS);
 include"config.php";
 include"./lib/mods.php";
 include"./lib/func.php";?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html>
+<!DOCTYPE html>
+<html lang="id">
 <head>
 <title><?if(!$title){$title ="sMemo";}?><?=$title;?></title>
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
